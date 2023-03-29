@@ -7,3 +7,9 @@ A terminal based brute force program for Caesar Ciphers.
 * 📦 Only one modual required.
 * 😎 Ascii text and color.
 * 🏃‍♂️Install and run immediately.
+
+## Requirements
+
+* 🐍 Python 3.x
+* Install 🛝 colorama
+* That's It! 🕶️

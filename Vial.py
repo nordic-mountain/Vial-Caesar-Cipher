@@ -1,4 +1,5 @@
 # Vial.py
+import platform
 import colorama
 import os
 
@@ -26,6 +27,12 @@ __     ___       _
    A {RED+"brute force"+RESET} program for Caesar Ciphers.
    Made by {BLUE+"TheTechyKid"+RESET}. Version {GREEN+version+RESET}.
    All lights reserved."""
+
+def clear_screen():
+    if platform.system() == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def Break(msg):
     """The encoder"""
@@ -63,8 +70,9 @@ def VialMain():
         if contin == "n":
             num = -1
         else:
-            os.system("cls")
+            clear_screen()
             continue
 
 if __name__ == "__main__":
     VialMain()
+  

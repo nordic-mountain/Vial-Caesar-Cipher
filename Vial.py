@@ -2,8 +2,9 @@
 import colorama
 import os
 
+# Main varibles
 colorama.init()
-version = "1.0.3"
+version = "1.0.4"
 
 # ANSI escape codes for text colors
 RED = "\033[1;31m"
@@ -27,27 +28,29 @@ __     ___       _
    All lights reserved."""
 
 def Break(msg):
-    output = ''
+    """The encoder"""
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    msg = msg.lower()
 
-    for xy1 in range(0, 26):
+    for key in range(len(alphabet)):
+        output = ''
+        
         for letter in msg:
-            x = ord(letter) + xy1
-            y = chr(x)
-                
-            output += y
-        print(f"#{xy1} "+output.upper()+"\n")
-        output = ""
+            if letter in alphabet:
+                index = alphabet.find(letter)
+                index = (index + key)%(len(alphabet))
 
-    for xy in range(0, 26):
-        for letter in msg:
-            x = ord(letter) - xy
-            y = chr(x)
+                if index < 0:
+                    index = index + len(alphabet)
+                    
+                output = output + alphabet[index]
                 
-            output += y
-        print(f"#{xy} "+output.upper()+"\n")
-        output = ""
+            else:
+                output = output + letter
+                    
+        print(f"#{key} "+output)
 
-def Vial():
+def VialMain():
     num = 1
     
     while num>0:
@@ -64,4 +67,4 @@ def Vial():
             continue
 
 if __name__ == "__main__":
-    Vial()
+    VialMain()

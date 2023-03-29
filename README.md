@@ -12,4 +12,4 @@ A terminal based brute force program for Caesar Ciphers.
 
 * 🐍 Python 3.x
 * Install 🛝 colorama
-* That's It! 🕶️
+* That's It! 🕶

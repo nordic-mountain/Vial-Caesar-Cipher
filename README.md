@@ -5,6 +5,6 @@ This program is intended for educational purposes only. The code is provided as-
 # Vial
 A terminal based brute force program for Caesar Ciphers.
 
-* terminal based 💻
-* Only one modual required 📦
-* Ascii text and color 😎
+* 💻 Terminal based.
+* 📦 Only one modual required.
+* 😎 Ascii text and color.

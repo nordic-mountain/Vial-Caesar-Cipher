@@ -6,3 +6,4 @@ A terminal based brute force program for Caesar Ciphers.
 * 💻 Terminal based.
 * 📦 Only one modual required.
 * 😎 Ascii text and color.
+* 🏃‍♂️Install and run immediately.
